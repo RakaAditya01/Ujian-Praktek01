@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var nama1 = prompt("Nama Pengirim")
+       var nama2 = prompt("Nama Penerima")
+       var jarak = prompt("Jarak Pengiriman")
+       var alamat = prompt("Alamat Penerima")
+       var semua = total + total1
+      if (jarak >= 50000) {
+          alert('diskon10%')
+          var hasil = 10 * jarak / 100
+          var total = jarak - hasil
+          var km =  jarak / 10000
+      }else if (jarak <= 50000) {
+          var hasil = 0 
+          var total = jarak
+          var km = jarak / 10000
+      }
+      var jenis = prompt("Jenis Barang")
+      var berat = prompt("Berat Barang")
+      if (berat >= 100000){
+          alert('diskon5%')
+          var hasil1 = 5 * berat / 100
+          var total1 = berat - hasil1
+          var kg = berat / 5000 
+      }else if (berat <= 1000000){
+          var hasil1 = 0
+          var total1 = berat
+          var kg = berat / 5000
+      }
+       document.write("Nama Pengirim :"+nama1,"</br>");
+       document.write("Nama Penerima :"+nama2,"</br>");
+       document.write("Jarak Pengiriman :"+jarak,"</br>");
+       document.write("Alamat Penerima :"+alamat,"</br>");
+       document.write("Jenis Barang :"+jenis,"</br>");
+       document.write("Berat Barang :"+berat,"</br>");
+       document.write("Biaya pengiriman :"+semua,"</br>");
+       document.write("Potongan Jarak Pengiriman :"+hasil,"</br>");
+       document.write("Potongan Berat Barang :"+hasil1,"</br>");
+    </script>
+</body>
+</html>
